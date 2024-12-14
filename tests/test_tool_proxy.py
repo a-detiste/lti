@@ -1,5 +1,6 @@
 import unittest
-from mock import Mock, patch
+from unittest.mock import Mock, patch
+
 from lti import ToolProxy
 import requests
 import json

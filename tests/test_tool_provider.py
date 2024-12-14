@@ -1,11 +1,7 @@
 import unittest
+from unittest.mock import Mock, patch
+from urllib.parse import urlsplit
 
-try:
-    from urllib.parse import urlsplit
-except ImportError:
-    from urlparse import urlsplit  # Python 2
-
-from mock import Mock, patch
 from oauthlib.common import generate_client_id
 from oauthlib.common import generate_token
 from oauthlib.oauth1 import SignatureOnlyEndpoint

@@ -1,6 +1,6 @@
 from lti import OutcomeResponse
 from lxml import etree
-import mock
+from unittest import mock
 import unittest
 
 RESPONSE_XML = b"""<?xml version="1.0" encoding="UTF-8"?>
